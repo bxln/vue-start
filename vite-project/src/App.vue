@@ -8,6 +8,7 @@ import ComponentCommunication from './components/ComponentCommunication.vue'
 import LifecycleExample from './components/LifecycleExample.vue'
 import ReactivityExample from './components/ReactivityExample.vue'
 import SlotExample from './components/SlotExample.vue'
+import PhotoWall from './components/PhotoWall.vue'
 
 const activeTab = ref('forms')
 
@@ -19,7 +20,8 @@ const tabs = [
   { id: 'communication', name: '组件通信', component: ComponentCommunication },
   { id: 'lifecycle', name: '生命周期', component: LifecycleExample },
   { id: 'reactivity', name: '响应式数据', component: ReactivityExample },
-  { id: 'slots', name: '插槽示例', component: SlotExample }
+  { id: 'slots', name: '插槽示例', component: SlotExample }, 
+  { id: 'photo-wall', name: '图片墙', component: PhotoWall }
 ]
 
 const setActiveTab = (tabId) => {
